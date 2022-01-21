@@ -16,33 +16,31 @@
 * put app name you want & select other in platform Example :
 * copy "api_id" & "api_hash" after clicking create app ( will be used in setup.py )
 
-## How To Install? (Only for Termux!):
+## • How To Install and Use
 
-$ `pkg install git python -y`
+`$ pkg install -y git python`
 
-$ `git clone https://github.com/Wahyu213/Scraper`
+`$ git clone https://github.com/Wahyu213/Scraper.git`
 
-$ `cd Scraper`
+`$ cd TeleGram-Scraper`
 
-$ `chmod +x * && python3 setup.py`
+* Install requierments
 
-## To Genrate User Data:
+`$ python3 setup.py -i`
 
-$ `python3 scraper.py`
+* setup configration file ( apiID, apiHASH )
 
-- (`members.csv` is default if you changed name use it)
-- Send Bulk SMS To Collected Data
+`$ python3 setup.py -c`
 
-$ `python3 smsbot.py members.csv` [Optional]
+* To Genrate User Data
 
-- Add users to your group
+`$ python3 scraper.py`
 
-$ `python3 adder.py `
+* ( members.csv is default if you changed name use it )
+* Send Bulk sms To Collected Data 
 
-#### Or,
+`$ python3 smsbot.py members.csv`
 
-$ `python3 add2group.py members.csv`
+* Update Tool
 
-- If you need more help <a href="https://t.me/OkaeriUserbot"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
----
-
+`$ python3 setup.py -u`
